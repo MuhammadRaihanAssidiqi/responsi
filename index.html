@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabel</title>
+</head>
+<body>
+    <h1>Tabel DataBase</h1>
+    <table>
+        <tr>
+            <th>nama</th>
+            <th>nomor urut</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{ row.['nama'] }}</td>
+            <td>{{ row.['nomor urut'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
